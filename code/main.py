@@ -4,7 +4,7 @@ import os
 import pandas as pd
 from ultralytics import YOLO
 
-model = YOLO('yolov8s.pt')#importing the model
+model = YOLO('yolov8n.pt')#importing the model
 # getting right path of colors.csv.txt file in cde script
 script_dir = os.path.dirname(os.path.abspath(__file__))
 csv_path = os.path.join(script_dir, "colors.csv.txt")
@@ -69,9 +69,9 @@ def get_limits(color):
 
     return lowerlimit, upperlimit
 
-output_path = "video/output.mp4"
-video_path = "video/roadview.mp4"
-video = cv2.VideoCapture(video_apath)#getting video
+output_path = "../video/output.mp4"
+video_path = "../video/roadview.mp4"
+video = cv2.VideoCapture(video_path)#getting video
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')
 frame_width, frame_height = 640, 468
 fps = video.get(cv2.CAP_PROP_FPS)
