@@ -71,7 +71,7 @@ def get_limits(color):
 
 output_path = "video/output.mp4"
 video_path = "video/roadview.mp4"
-video = cv2.VideoCapture(video_apath)#getting video
+video = cv2.VideoCapture(video_path)#getting video
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')
 frame_width, frame_height = 640, 468
 fps = video.get(cv2.CAP_PROP_FPS)
