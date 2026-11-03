@@ -39,6 +39,7 @@ yolov8-conditional-color-counter/
 Firstly get into the file/directory then
 1. clone the Repository
 >git clone https://github.com/ABDURREHMAN-BUILDS/yolov8-conditional-color-counter.git
+
 >cd yolov8-conditional-color-counter
 2. Set Up Virtual Environment
 >python -m venv env
